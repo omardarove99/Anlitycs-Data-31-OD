@@ -1,5 +1,5 @@
 #Definir la imagen base
-from ubuntu:20.04
+FROM ubuntu:24.04
 
 #Activar una ariable de entorno del sistema operativo:
 ENV DEBIAN_FRONTEND=noninteractive
@@ -26,13 +26,13 @@ WORKDIR /workspace
 RUN mkdir -p /root/.jupyter
 
 #Configuraciones de entorno jupiter
-run echo "c.NotebookApp.token =''">> /root/.jupyter/jupyter_notebook_config.py \
-    echo "c.NotebookApp.password =''">> /root/.jupyter/jupyter_notebook_config.py \
-    echo "c.NotebookApp.open_browser =False">> /root/.jupyter/jupyter_notebook_config.py \
+RUN echo "c.NotebookApp.token =''">> /root/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.password =''">> /root/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.open_browser =False">> /root/.jupyter/jupyter_notebook_config.py && \
     echo "c.NotebookApp.allow_root =True">> /root/.jupyter/jupyter_notebook_config.py 
 
 #Puerto de exposicion
-expose 8888
+EXPOSE 8888
 
 #Inicia el contenedor
-CMD ["jupyter", "notebook", "--ip=0.0.0.0"."--port=8888", "--no-browser","--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0","--port=8888", "--no-browser","--allow-root"]
