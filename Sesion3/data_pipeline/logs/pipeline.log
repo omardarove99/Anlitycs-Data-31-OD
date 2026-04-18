@@ -1,0 +1,135 @@
+2024-11-13 20:36:25,475 - INFO - Conexión a la base de datos establecida correctamente.
+2024-11-13 20:36:25,477 - INFO - Archivo data/departments.csv leído exitosamente.
+2024-11-13 20:36:25,478 - INFO - Archivo data/categories.csv leído exitosamente.
+2024-11-13 20:36:25,491 - INFO - Archivo data/customers.csv leído exitosamente.
+2024-11-13 20:36:25,498 - INFO - Archivo data/products.csv leído exitosamente.
+2024-11-13 20:36:25,522 - INFO - Archivo data/orders.csv leído exitosamente.
+2024-11-13 20:36:25,586 - INFO - Archivo data/order_items.csv leído exitosamente.
+2024-11-13 20:36:25,602 - INFO - Recalculando order_item_subtotal.
+2024-11-13 20:36:25,624 - INFO - Datos cargados exitosamente en la tabla departments.
+2024-11-13 20:36:25,630 - ERROR - Error al cargar datos en la tabla categories: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'Electronics' for key 'categories.unique_category_name'
+[SQL: INSERT INTO categories (category_id, category_department_id, category_name) VALUES (%(category_id)s, %(category_department_id)s, %(category_name)s)]
+[parameters: [{'category_id': 1, 'category_department_id': 2, 'category_name': 'Football'}, {'category_id': 2, 'category_department_id': 2, 'category_name': 'Soccer'}, {'category_id': 3, 'category_department_id': 2, 'category_name': 'Baseball & Softball'}, {'category_id': 4, 'category_department_id': 2, 'category_name': 'Basketball'}, {'category_id': 5, 'category_department_id': 2, 'category_name': 'Lacrosse'}, {'category_id': 6, 'category_department_id': 2, 'category_name': 'Tennis & Racquet'}, {'category_id': 7, 'category_department_id': 2, 'category_name': 'Hockey'}, {'category_id': 8, 'category_department_id': 2, 'category_name': 'More Sports'}  ... displaying 10 of 59 total bound parameter sets ...  {'category_id': 58, 'category_department_id': 8, 'category_name': 'NFL Players'}, {'category_id': 59, 'category_department_id': 8, 'category_name': 'Sports'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-13 20:41:44,504 - INFO - Conexión a la base de datos establecida correctamente.
+2024-11-13 20:41:44,506 - INFO - Archivo data/departments.csv leído exitosamente.
+2024-11-13 20:41:44,508 - INFO - Archivo data/categories.csv leído exitosamente.
+2024-11-13 20:41:44,521 - INFO - Archivo data/customers.csv leído exitosamente.
+2024-11-13 20:41:44,528 - INFO - Archivo data/products.csv leído exitosamente.
+2024-11-13 20:41:44,556 - INFO - Archivo data/orders.csv leído exitosamente.
+2024-11-13 20:41:44,622 - INFO - Archivo data/order_items.csv leído exitosamente.
+2024-11-13 20:41:44,640 - INFO - Recalculando order_item_subtotal.
+2024-11-13 20:41:44,654 - ERROR - Error al cargar datos en la tabla departments: (mysql.connector.errors.ProgrammingError) 1049 (42000): Unknown database 'retail'
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-11-13 20:51:55,857 - INFO - Conexión a la base de datos establecida correctamente.
+2024-11-13 20:51:55,859 - INFO - Archivo data/departments.csv leído exitosamente.
+2024-11-13 20:51:55,860 - INFO - Archivo data/categories.csv leído exitosamente.
+2024-11-13 20:51:55,873 - INFO - Archivo data/customers.csv leído exitosamente.
+2024-11-13 20:51:55,881 - INFO - Archivo data/products.csv leído exitosamente.
+2024-11-13 20:51:55,907 - INFO - Archivo data/orders.csv leído exitosamente.
+2024-11-13 20:51:55,996 - INFO - Archivo data/order_items.csv leído exitosamente.
+2024-11-13 20:51:56,012 - INFO - Recalculando order_item_subtotal.
+2024-11-13 20:51:56,023 - ERROR - Error al cargar datos en la tabla departments: (mysql.connector.errors.ProgrammingError) 1049 (42000): Unknown database 'retail'
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-11-13 20:52:23,664 - INFO - Conexión a la base de datos establecida correctamente.
+2024-11-13 20:52:23,667 - INFO - Archivo data/departments.csv leído exitosamente.
+2024-11-13 20:52:23,668 - INFO - Archivo data/categories.csv leído exitosamente.
+2024-11-13 20:52:23,681 - INFO - Archivo data/customers.csv leído exitosamente.
+2024-11-13 20:52:23,689 - INFO - Archivo data/products.csv leído exitosamente.
+2024-11-13 20:52:23,715 - INFO - Archivo data/orders.csv leído exitosamente.
+2024-11-13 20:52:23,779 - INFO - Archivo data/order_items.csv leído exitosamente.
+2024-11-13 20:52:23,794 - INFO - Recalculando order_item_subtotal.
+2024-11-13 20:52:23,819 - INFO - Datos cargados exitosamente en la tabla departments.
+2024-11-13 20:52:23,826 - INFO - Datos cargados exitosamente en la tabla categories.
+2024-11-13 20:52:24,431 - INFO - Datos cargados exitosamente en la tabla customers.
+2024-11-13 20:52:24,464 - ERROR - Error al cargar datos en la tabla products: (mysql.connector.errors.IntegrityError) 1048 (23000): Column 'product_description' cannot be null
+[SQL: INSERT INTO products (product_id, product_category_id, product_name, product_description, product_price, product_image) VALUES (%(product_id)s, %(product_category_id)s, %(product_name)s, %(product_description)s, %(product_price)s, %(product_image)s)]
+[parameters: [{'product_id': 1, 'product_category_id': 2, 'product_name': 'Quest Q64 10 FT. x 10 FT. Slant Leg Instant U', 'product_description': None, 'product_price': 59.98, 'product_image': 'http://images.acmesports.sports/Quest+Q64+10+FT.+x+10+FT.+Slant+Leg+Instant+Up+Canopy'}, {'product_id': 2, 'product_category_id': 2, 'product_name': "Under Armour Men's Highlight MC Football Clea", 'product_description': None, 'product_price': 129.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Highlight+MC+Football+Cleat'}, {'product_id': 3, 'product_category_id': 2, 'product_name': "Under Armour Men's Renegade D Mid Football Cl", 'product_description': None, 'product_price': 89.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Renegade+D+Mid+Football+Cleat'}, {'product_id': 4, 'product_category_id': 2, 'product_name': "Under Armour Men's Renegade D Mid Football Cl", 'product_description': None, 'product_price': 89.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Renegade+D+Mid+Football+Cleat'}, {'product_id': 5, 'product_category_id': 2, 'product_name': 'Riddell Youth Revolution Speed Custom Footbal', 'product_description': None, 'product_price': 199.99, 'product_image': 'http://images.acmesports.sports/Riddell+Youth+Revolution+Speed+Custom+Football+Helmet'}, {'product_id': 6, 'product_category_id': 2, 'product_name': "Jordan Men's VI Retro TD Football Cleat", 'product_description': None, 'product_price': 134.99, 'product_image': 'http://images.acmesports.sports/Jordan+Men%27s+VI+Retro+TD+Football+Cleat'}, {'product_id': 7, 'product_category_id': 2, 'product_name': 'Schutt Youth Recruit Hybrid Custom Football H', 'product_description': None, 'product_price': 99.99, 'product_image': 'http://images.acmesports.sports/Schutt+Youth+Recruit+Hybrid+Custom+Football+Helmet+2014'}, {'product_id': 8, 'product_category_id': 2, 'product_name': "Nike Men's Vapor Carbon Elite TD Football Cle", 'product_description': None, 'product_price': 129.99, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Vapor+Carbon+Elite+TD+Football+Cleat'}  ... displaying 10 of 1345 total bound parameter sets ...  {'product_id': 1344, 'product_category_id': 59, 'product_name': "Nike Men's Home Game Jersey St. Louis Rams Aa", 'product_description': None, 'product_price': 100.0, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Home+Game+Jersey+St.+Louis+Rams+Aaron+Donald+%2399'}, {'product_id': 1345, 'product_category_id': 59, 'product_name': "Nike Men's Home Game Jersey St. Louis Rams Gr", 'product_description': None, 'product_price': 100.0, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Home+Game+Jersey+St.+Louis+Rams+Greg+Robinson...'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-13 20:53:55,085 - INFO - Conexión a la base de datos establecida correctamente.
+2024-11-13 20:53:55,086 - INFO - Archivo data/departments.csv leído exitosamente.
+2024-11-13 20:53:55,088 - INFO - Archivo data/categories.csv leído exitosamente.
+2024-11-13 20:53:55,101 - INFO - Archivo data/customers.csv leído exitosamente.
+2024-11-13 20:53:55,109 - INFO - Archivo data/products.csv leído exitosamente.
+2024-11-13 20:53:55,135 - INFO - Archivo data/orders.csv leído exitosamente.
+2024-11-13 20:53:55,199 - INFO - Archivo data/order_items.csv leído exitosamente.
+2024-11-13 20:53:55,215 - INFO - Recalculando order_item_subtotal.
+2024-11-13 20:53:55,237 - INFO - Datos cargados exitosamente en la tabla departments.
+2024-11-13 20:53:55,244 - INFO - Datos cargados exitosamente en la tabla categories.
+2024-11-13 20:53:55,840 - INFO - Datos cargados exitosamente en la tabla customers.
+2024-11-13 20:53:55,909 - INFO - Datos cargados exitosamente en la tabla products.
+2024-11-13 20:53:58,152 - INFO - Datos cargados exitosamente en la tabla orders.
+2024-11-13 20:54:04,805 - INFO - Datos cargados exitosamente en la tabla order_items.
+2024-11-13 20:54:04,806 - INFO - Pipeline de datos ejecutado exitosamente.
+2026-04-18 16:45:12,185 - INFO - Conexión a la base de datos establecida correctamente.
+2026-04-18 16:45:12,208 - INFO - Archivo data/departments.csv leído exitosamente.
+2026-04-18 16:45:12,212 - INFO - Archivo data/categories.csv leído exitosamente.
+2026-04-18 16:45:12,261 - INFO - Archivo data/customers.csv leído exitosamente.
+2026-04-18 16:45:12,413 - INFO - Archivo data/products.csv leído exitosamente.
+2026-04-18 16:45:12,591 - INFO - Archivo data/orders.csv leído exitosamente.
+2026-04-18 16:45:12,766 - INFO - Archivo data/order_items.csv leído exitosamente.
+2026-04-18 16:45:12,787 - INFO - Recalculando order_item_subtotal.
+2026-04-18 16:45:13,013 - ERROR - Error al cargar datos en la tabla departments: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2' for key 'departments.PRIMARY'
+[SQL: INSERT INTO departments (department_id, department_name) VALUES (%(department_id)s, %(department_name)s)]
+[parameters: [{'department_id': 2, 'department_name': 'Fitness'}, {'department_id': 3, 'department_name': 'Footwear'}, {'department_id': 4, 'department_name': 'Apparel'}, {'department_id': 5, 'department_name': 'Golf'}, {'department_id': 6, 'department_name': 'Outdoors'}, {'department_id': 7, 'department_name': 'Fan Shop'}, {'department_id': 8, 'department_name': 'Sports'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-04-18 16:48:58,353 - INFO - Conexión a la base de datos establecida correctamente.
+2026-04-18 16:48:58,355 - INFO - Archivo data/departments.csv leído exitosamente.
+2026-04-18 16:48:58,356 - INFO - Archivo data/categories.csv leído exitosamente.
+2026-04-18 16:48:58,373 - INFO - Archivo data/customers.csv leído exitosamente.
+2026-04-18 16:48:58,385 - INFO - Archivo data/products.csv leído exitosamente.
+2026-04-18 16:48:58,432 - INFO - Archivo data/orders.csv leído exitosamente.
+2026-04-18 16:48:58,609 - INFO - Archivo data/order_items.csv leído exitosamente.
+2026-04-18 16:48:58,640 - INFO - Recalculando order_item_subtotal.
+2026-04-18 16:48:58,703 - ERROR - Error al cargar datos en la tabla departments: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2' for key 'departments.PRIMARY'
+[SQL: INSERT INTO departments (department_id, department_name) VALUES (%(department_id)s, %(department_name)s)]
+[parameters: [{'department_id': 2, 'department_name': 'Fitness'}, {'department_id': 3, 'department_name': 'Footwear'}, {'department_id': 4, 'department_name': 'Apparel'}, {'department_id': 5, 'department_name': 'Golf'}, {'department_id': 6, 'department_name': 'Outdoors'}, {'department_id': 7, 'department_name': 'Fan Shop'}, {'department_id': 8, 'department_name': 'Sports'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-04-18 16:49:42,577 - INFO - Conexión a la base de datos establecida correctamente.
+2026-04-18 16:49:42,579 - INFO - Archivo data/departments.csv leído exitosamente.
+2026-04-18 16:49:42,581 - INFO - Archivo data/categories.csv leído exitosamente.
+2026-04-18 16:49:42,621 - INFO - Archivo data/customers.csv leído exitosamente.
+2026-04-18 16:49:42,640 - INFO - Archivo data/products.csv leído exitosamente.
+2026-04-18 16:49:42,729 - INFO - Archivo data/orders.csv leído exitosamente.
+2026-04-18 16:49:42,871 - INFO - Archivo data/order_items.csv leído exitosamente.
+2026-04-18 16:49:42,936 - INFO - Recalculando order_item_subtotal.
+2026-04-18 16:49:43,015 - ERROR - Error al cargar datos en la tabla departments: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2' for key 'departments.PRIMARY'
+[SQL: INSERT INTO departments (department_id, department_name) VALUES (%(department_id)s, %(department_name)s)]
+[parameters: [{'department_id': 2, 'department_name': 'Fitness'}, {'department_id': 3, 'department_name': 'Footwear'}, {'department_id': 4, 'department_name': 'Apparel'}, {'department_id': 5, 'department_name': 'Golf'}, {'department_id': 6, 'department_name': 'Outdoors'}, {'department_id': 7, 'department_name': 'Fan Shop'}, {'department_id': 8, 'department_name': 'Sports'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-04-18 16:53:53,503 - INFO - Conexión a la base de datos establecida correctamente.
+2026-04-18 16:53:53,506 - INFO - Archivo leído exitosamente: data/departments.csv
+2026-04-18 16:53:53,508 - INFO - Archivo leído exitosamente: data/categories.csv
+2026-04-18 16:53:53,524 - INFO - Archivo leído exitosamente: data/customers.csv
+2026-04-18 16:53:53,539 - INFO - Archivo leído exitosamente: data/products.csv
+2026-04-18 16:53:53,577 - INFO - Archivo leído exitosamente: data/orders.csv
+2026-04-18 16:53:53,701 - INFO - Archivo leído exitosamente: data/order_items.csv
+2026-04-18 16:53:53,740 - INFO - Recalculando order_item_subtotal.
+2026-04-18 16:53:54,134 - INFO - Tablas truncadas correctamente.
+2026-04-18 16:53:54,143 - INFO - Datos cargados exitosamente en la tabla departments.
+2026-04-18 16:53:54,151 - INFO - Datos cargados exitosamente en la tabla categories.
+2026-04-18 16:53:55,068 - INFO - Datos cargados exitosamente en la tabla customers.
+2026-04-18 16:53:55,091 - ERROR - Error al cargar datos en la tabla products: (mysql.connector.errors.IntegrityError) 1048 (23000): Column 'product_description' cannot be null
+[SQL: INSERT INTO products (product_id, product_category_id, product_name, product_description, product_price, product_image) VALUES (%(product_id)s, %(product_category_id)s, %(product_name)s, %(product_description)s, %(product_price)s, %(product_image)s)]
+[parameters: [{'product_id': 1, 'product_category_id': 2, 'product_name': 'Quest Q64 10 FT. x 10 FT. Slant Leg Instant U', 'product_description': None, 'product_price': 59.98, 'product_image': 'http://images.acmesports.sports/Quest+Q64+10+FT.+x+10+FT.+Slant+Leg+Instant+Up+Canopy'}, {'product_id': 2, 'product_category_id': 2, 'product_name': "Under Armour Men's Highlight MC Football Clea", 'product_description': None, 'product_price': 129.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Highlight+MC+Football+Cleat'}, {'product_id': 3, 'product_category_id': 2, 'product_name': "Under Armour Men's Renegade D Mid Football Cl", 'product_description': None, 'product_price': 89.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Renegade+D+Mid+Football+Cleat'}, {'product_id': 4, 'product_category_id': 2, 'product_name': "Under Armour Men's Renegade D Mid Football Cl", 'product_description': None, 'product_price': 89.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Renegade+D+Mid+Football+Cleat'}, {'product_id': 5, 'product_category_id': 2, 'product_name': 'Riddell Youth Revolution Speed Custom Footbal', 'product_description': None, 'product_price': 199.99, 'product_image': 'http://images.acmesports.sports/Riddell+Youth+Revolution+Speed+Custom+Football+Helmet'}, {'product_id': 6, 'product_category_id': 2, 'product_name': "Jordan Men's VI Retro TD Football Cleat", 'product_description': None, 'product_price': 134.99, 'product_image': 'http://images.acmesports.sports/Jordan+Men%27s+VI+Retro+TD+Football+Cleat'}, {'product_id': 7, 'product_category_id': 2, 'product_name': 'Schutt Youth Recruit Hybrid Custom Football H', 'product_description': None, 'product_price': 99.99, 'product_image': 'http://images.acmesports.sports/Schutt+Youth+Recruit+Hybrid+Custom+Football+Helmet+2014'}, {'product_id': 8, 'product_category_id': 2, 'product_name': "Nike Men's Vapor Carbon Elite TD Football Cle", 'product_description': None, 'product_price': 129.99, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Vapor+Carbon+Elite+TD+Football+Cleat'}  ... displaying 10 of 1345 total bound parameter sets ...  {'product_id': 1344, 'product_category_id': 59, 'product_name': "Nike Men's Home Game Jersey St. Louis Rams Aa", 'product_description': None, 'product_price': 100.0, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Home+Game+Jersey+St.+Louis+Rams+Aaron+Donald+%2399'}, {'product_id': 1345, 'product_category_id': 59, 'product_name': "Nike Men's Home Game Jersey St. Louis Rams Gr", 'product_description': None, 'product_price': 100.0, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Home+Game+Jersey+St.+Louis+Rams+Greg+Robinson...'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-04-18 16:53:55,092 - ERROR - Fallo general del pipeline: (mysql.connector.errors.IntegrityError) 1048 (23000): Column 'product_description' cannot be null
+[SQL: INSERT INTO products (product_id, product_category_id, product_name, product_description, product_price, product_image) VALUES (%(product_id)s, %(product_category_id)s, %(product_name)s, %(product_description)s, %(product_price)s, %(product_image)s)]
+[parameters: [{'product_id': 1, 'product_category_id': 2, 'product_name': 'Quest Q64 10 FT. x 10 FT. Slant Leg Instant U', 'product_description': None, 'product_price': 59.98, 'product_image': 'http://images.acmesports.sports/Quest+Q64+10+FT.+x+10+FT.+Slant+Leg+Instant+Up+Canopy'}, {'product_id': 2, 'product_category_id': 2, 'product_name': "Under Armour Men's Highlight MC Football Clea", 'product_description': None, 'product_price': 129.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Highlight+MC+Football+Cleat'}, {'product_id': 3, 'product_category_id': 2, 'product_name': "Under Armour Men's Renegade D Mid Football Cl", 'product_description': None, 'product_price': 89.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Renegade+D+Mid+Football+Cleat'}, {'product_id': 4, 'product_category_id': 2, 'product_name': "Under Armour Men's Renegade D Mid Football Cl", 'product_description': None, 'product_price': 89.99, 'product_image': 'http://images.acmesports.sports/Under+Armour+Men%27s+Renegade+D+Mid+Football+Cleat'}, {'product_id': 5, 'product_category_id': 2, 'product_name': 'Riddell Youth Revolution Speed Custom Footbal', 'product_description': None, 'product_price': 199.99, 'product_image': 'http://images.acmesports.sports/Riddell+Youth+Revolution+Speed+Custom+Football+Helmet'}, {'product_id': 6, 'product_category_id': 2, 'product_name': "Jordan Men's VI Retro TD Football Cleat", 'product_description': None, 'product_price': 134.99, 'product_image': 'http://images.acmesports.sports/Jordan+Men%27s+VI+Retro+TD+Football+Cleat'}, {'product_id': 7, 'product_category_id': 2, 'product_name': 'Schutt Youth Recruit Hybrid Custom Football H', 'product_description': None, 'product_price': 99.99, 'product_image': 'http://images.acmesports.sports/Schutt+Youth+Recruit+Hybrid+Custom+Football+Helmet+2014'}, {'product_id': 8, 'product_category_id': 2, 'product_name': "Nike Men's Vapor Carbon Elite TD Football Cle", 'product_description': None, 'product_price': 129.99, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Vapor+Carbon+Elite+TD+Football+Cleat'}  ... displaying 10 of 1345 total bound parameter sets ...  {'product_id': 1344, 'product_category_id': 59, 'product_name': "Nike Men's Home Game Jersey St. Louis Rams Aa", 'product_description': None, 'product_price': 100.0, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Home+Game+Jersey+St.+Louis+Rams+Aaron+Donald+%2399'}, {'product_id': 1345, 'product_category_id': 59, 'product_name': "Nike Men's Home Game Jersey St. Louis Rams Gr", 'product_description': None, 'product_price': 100.0, 'product_image': 'http://images.acmesports.sports/Nike+Men%27s+Home+Game+Jersey+St.+Louis+Rams+Greg+Robinson...'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-04-18 16:55:48,938 - INFO - Conexión a la base de datos establecida correctamente.
+2026-04-18 16:55:48,940 - INFO - Archivo leído exitosamente: data/departments.csv
+2026-04-18 16:55:48,941 - INFO - Archivo leído exitosamente: data/categories.csv
+2026-04-18 16:55:48,957 - INFO - Archivo leído exitosamente: data/customers.csv
+2026-04-18 16:55:48,968 - INFO - Archivo leído exitosamente: data/products.csv
+2026-04-18 16:55:49,001 - INFO - Archivo leído exitosamente: data/orders.csv
+2026-04-18 16:55:49,079 - INFO - Archivo leído exitosamente: data/order_items.csv
+2026-04-18 16:55:49,100 - INFO - Recalculando order_item_subtotal.
+2026-04-18 16:55:49,276 - INFO - Tablas truncadas correctamente.
+2026-04-18 16:55:49,334 - INFO - Datos cargados exitosamente en la tabla departments.
+2026-04-18 16:55:49,385 - INFO - Datos cargados exitosamente en la tabla categories.
+2026-04-18 16:55:50,129 - INFO - Datos cargados exitosamente en la tabla customers.
+2026-04-18 16:55:50,200 - INFO - Datos cargados exitosamente en la tabla products.
+2026-04-18 16:55:52,549 - INFO - Datos cargados exitosamente en la tabla orders.
+2026-04-18 16:55:59,096 - INFO - Datos cargados exitosamente en la tabla order_items.
+2026-04-18 16:55:59,096 - INFO - Pipeline ejecutado exitosamente.
